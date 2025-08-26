@@ -50,12 +50,12 @@ uv run python main.py data/input.csv
 Ver `notebook/notebook_gepa.ipynb`.
 
 **Métricas obtenidas en dataset de prueba (1,213 ejemplos):**
-- **F1 Score Promedio**: 0.745
-- F1 Neurológico: 0.766 (76.6%)
-- F1 Cardiovascular: 0.783 (78.3%)  
-- F1 Hepatorenal: 0.748 (74.8%)
-- F1 Oncológico: 0.681 (68.1%)
-- **Métrica DSPy**: 84.4% (1023.75/1213)
+- **F1 Score Promedio**: 0.8216
+- F1 Neurológico: 0.7612 (76.1%)
+- F1 Cardiovascular: 0.8164 (81.6%)  
+- F1 Hepatorenal: 0.8340 (83.4%)
+- F1 Oncológico: 0.8748 (87.5%)
+- **Métrica DSPy**: 84.4%
 
 ## 🏗️ Arquitectura
 
