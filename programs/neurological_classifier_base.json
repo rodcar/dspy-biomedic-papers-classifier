@@ -1,0 +1,30 @@
+{
+  "traces": [],
+  "train": [],
+  "demos": [],
+  "signature": {
+    "instructions": "Classifies if a biomedical paper is related to neurological conditions.",
+    "fields": [
+      {
+        "prefix": "Title:",
+        "description": "Title of the biomedical paper"
+      },
+      {
+        "prefix": "Abstract:",
+        "description": "Abstract of the biomedical paper"
+      },
+      {
+        "prefix": "Is Neurological:",
+        "description": "True if the paper is related to neurological conditions"
+      }
+    ]
+  },
+  "lm": null,
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.0.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

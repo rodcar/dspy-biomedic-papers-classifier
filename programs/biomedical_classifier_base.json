@@ -1,0 +1,32 @@
+{
+  "classifier.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Read the provided biomedical paper (title and abstract) and determine the set of medical categories applicable to the paper.",
+      "fields": [
+        {
+          "prefix": "Paper:",
+          "description": "Title and abstract of the biomedical paper"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Categories:",
+          "description": "List of applicable medical categories for this paper"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.0.2",
+      "cloudpickle": "3.1"
+    }
+  }
+}

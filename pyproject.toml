@@ -1,0 +1,20 @@
+[project]
+name = "dspy-biomedic-papers-classifier"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dspy>=2.6.27",
+    "ipykernel>=6.29.5",
+    "kagglehub>=0.3.12",
+    "matplotlib>=3.10.1",
+    "mlflow>=3.1.1",
+    "numpy>=1.26.4",
+    "pandas>=2.0.2",
+    "polars>=1.31.0",
+    "python-dotenv>=1.1.0",
+    "scikit-learn>=1.6.1",
+    "seaborn>=0.13.2",
+    "wordcloud>=1.9.4",
+]

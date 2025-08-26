@@ -1,0 +1,36 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "You are given the title and abstract of a biomedical research paper. Your task is to classify the paper into zero or more of the following medical categories, according to strict criteria based only on the information in the title and abstract:\n\n- \"neurological\": for papers whose primary research focus concerns the nervous system (including the brain, spinal cord, peripheral nerves), neurological diseases or disorders, or treatments\/interventions for such neurological conditions.\n- \"cardiovascular\": for papers primarily focused on the heart, vasculature (blood vessels), or diseases, conditions, and treatments of the cardiovascular system. Examples include heart disease, hypertension, arrhythmias, vascular disorders, and cardiac interventions\/transplants.\n- \"hepatorenal\": for papers primarily pertaining to the kidneys or liver, or focused on diseases, dysfunction, injury, or treatments relating to renal (kidney) or hepatic (liver) systems. Specific indications include explicit mention or study of renal\/hepatic function (like proteinuria, GFR, liver enzymes), conditions (such as CKD, hepatic steatosis), or interventions directly affecting kidney\/liver health.\n- \"oncological\": for papers whose main subject is cancer, tumors, neoplasms, or oncology, including all solid and hematological malignancies such as carcinoma, sarcoma, leukemia, or lymphoma, as well as research focusing substantially on cancer patients or cancer-centric outcomes\/interventions.\n\nSome papers may involve more than one of these systems—assign multiple categories only if they are each directly and substantially studied as per the definitions above.\n\nAssign categories only if the diseases, body systems, or interventions central to the paper directly match the definitions above based on explicit evidence in the title and\/or abstract. Do not include a category solely because study patients have a certain disease or comorbidity unless the outcomes, interventions, or primary focus addresses that system’s function\/disease. For \"oncological\", the study must focus on cancer, not merely involve cancer patients incidentally; likewise for all other categories.\n\nIf none of these categories apply, output an empty list.\n\nYour output must be the Python list of applicable strings, such as:\n[\"neurological\"]\n[\"cardiovascular\", \"oncological\"]\n[\"neurological\", \"cardiovascular\", \"hepatorenal\"]\n[]\n\nDo NOT include reasoning, explanation, or additional formatting—output ONLY the list.\n\nReview both title and abstract. Do NOT infer or speculate beyond the information given in those sections. If a system, disease, or condition is not explicitly a central focus, do not assign the associated category.\n\nReference: \n- \"neurological\": brain, nerves, neurological disorders, treatments for neurological diseases, or related explicit focus.\n- \"cardiovascular\": heart, blood vessels, cardiac\/vascular diseases, arrhythmias, cardiovascular interventions, hypertension.\n- \"hepatorenal\": kidney or liver, renal\/hepatic function, CKD, proteinuria, liver enzymes, hepatic failure, direct study of these organs\/systems.\n- \"oncological\": cancer, tumors, neoplasms, carcinoma, sarcoma, leukemia, lymphoma, or oncology as a primary focus.\n\nExamples:\n- A paper studying \"the effect of a new drug on cardiac hypertrophy in diabetic patients\" would be [\"cardiovascular\"].\n- A study of \"renal effects of chemotherapy in lymphoma patients\" would be [\"hepatorenal\", \"oncological\"].\n- A paper on \"ERK1\/2 pathway in rat liver\" investigating lipid regulation and hepatic outcomes would be [\"hepatorenal\"].\n- A trial of a stroke rehabilitation device would be [\"neurological\"].\n- A survey of bone density changes in patients with hypertension would be [].\n\nOutput format:\nA Python list of zero or more of these strings:\n[\"neurological\", \"cardiovascular\", \"hepatorenal\", \"oncological\"]",
+      "fields": [
+        {
+          "prefix": "Title:",
+          "description": "Title of the biomedical paper"
+        },
+        {
+          "prefix": "Abstract:",
+          "description": "Abstract of the biomedical paper"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Categories:",
+          "description": "Python list of relevant medical categories: [\"neurological\", \"cardiovascular\", \"hepatorenal\", \"oncological\"]. Use exact strings from this list only."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.0.2",
+      "cloudpickle": "3.1"
+    }
+  }
+}

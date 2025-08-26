@@ -1,0 +1,61 @@
+{
+  "traces": [],
+  "train": [],
+  "demos": [
+    {
+      "augmented": true,
+      "title": "beta-blockers and heart failure: brain insights",
+      "abstract": "Study design: prospective investigation of metformin in hypertension. Participants: 151 elderly patients with serotonin and hippocampal evaluation. Results: positive treatment response with neurodegenerative correlation. Conclusion: clinical practice guidelines.",
+      "is_neurological": true
+    },
+    {
+      "title": "EEG reveals hepatitis secrets",
+      "abstract": "Background: stroke affects cardiac patients worldwide, particularly involving hypothalamus and cerebrovascular. Methods: We conducted a randomized controlled study to evaluate calcium channel blockers in 409 patients, examining dilated cardiomyopathy parameters. Results: improved patient outcomes. Conclusion: clinical practice guidelines.",
+      "neurological": true,
+      "cardiovascular": true,
+      "hepatorenal": false,
+      "oncological": false
+    },
+    {
+      "title": "chemotherapy and cardiomyopathy: brain insights",
+      "abstract": "Hypothesis: statins improves stroke outcomes via cerebral infarction pathways. Methods: randomized controlled trial with 485 diabetic patients, measuring cardiomyopathy and cognitive impairment. Results: decreased mortality rates. Conclusion: clinical practice guidelines.",
+      "neurological": true,
+      "cardiovascular": true,
+      "hepatorenal": false,
+      "oncological": false
+    },
+    {
+      "title": "Molecular analysis of the APC gene in 205 families: extended genotype-phenotype correlations in FAP and evidence for the role of APC amino acid changes in colorectal cancer predisposition.",
+      "abstract": "BACKGROUND \/ AIMS  The development of colorectal cancer and a variable range of extracolonic manifestations in familial adenomatous polyposis ( FAP ) is the result of the dominant inheritance of adenomatous polyposis coli ( APC ) gene mutations . In this study , direct mutation analysis of the APC gene was performed to determine genotype-phenotype correlations for nine extracolonic manifestations and to investigate the incidence of APC mutations in non-FAP colorectal cancer . METHODS  The APC gene was analysed in 190 unrelated FAP and 15 non-FAP colorectal cancer patients using denaturing gradient gel electrophoresis , the protein truncation test , and direct sequencing . RESULTS  Chain terminating signals were only identified in patients belonging to the FAP group ( 105 patients ) . Amino acid changes were identified in four patients , three of whom belonged to the non-FAP group of colorectal cancer patients . Genotype-phenotype correlations identified significant differences in the nature of certain extracolonic manifestations in FAP patients belonging to three mutation subgroups . CONCLUSIONS  Extended genotype-phenotype correlations made in this study may have the potential to determine the most appropriate surveillance and prophylactic treatment regimens for those patients with mutations associated with life threatening conditions . This study also provided evidence for the pathological nature of amino acid changes in APC associated with both FAP and non-FAP colorectal cancer patients . .",
+      "neurological": true,
+      "cardiovascular": false,
+      "hepatorenal": false,
+      "oncological": true
+    }
+  ],
+  "signature": {
+    "instructions": "Given the title and abstract of a biomedical research article, determine whether the article primarily pertains to the field of neurology. Analyze the content for references to neurological systems, diseases, pathways, or concepts (such as brain, neurons, dementia, cerebrospinal fluid, or neurological mechanisms). Return `True` if the article is mainly about neurological topics, and `False` if it is not. Base your decision on both explicit mentions and contextual relevance to neurology, and avoid classifying articles as neurological if they focus on unrelated medical domains (e.g., oncology, cardiology) without clear neurological connections.",
+    "fields": [
+      {
+        "prefix": "Title:",
+        "description": "Title of the biomedical paper"
+      },
+      {
+        "prefix": "Abstract:",
+        "description": "Abstract of the biomedical paper"
+      },
+      {
+        "prefix": "Is Neurological:",
+        "description": "True if the paper is related to neurological conditions"
+      }
+    ]
+  },
+  "lm": null,
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.0.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

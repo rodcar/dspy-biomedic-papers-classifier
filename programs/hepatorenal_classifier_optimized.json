@@ -1,0 +1,59 @@
+{
+  "traces": [],
+  "train": [],
+  "demos": [
+    {
+      "augmented": true,
+      "title": "lymphoma and ventricle: cardiac connections",
+      "abstract": "Aim: To investigate ACE inhibitors effects on cancer through defibrillator analysis. Methods: 86 cardiac patients underwent cross-sectional evaluation with stenosis and deep vein thrombosis assessment. Results: better quality of life measures. Conclusion: healthcare advancement.",
+      "is_hepatorenal": false
+    },
+    {
+      "augmented": true,
+      "title": "meningioma pathways in coronary artery disease",
+      "abstract": "Aim: To investigate ACE inhibitors effects on stroke through multiple sclerosis analysis. Methods: 327 cancer patients underwent prospective evaluation with acetylcholine and cortical assessment. Results: positive treatment response. Conclusion: safety considerations.",
+      "is_hepatorenal": false
+    },
+    {
+      "title": "Multiple origins for phenylketonuria in Europe.",
+      "abstract": "Phenylketonuria ( PKU ) , a disorder of amino acid metabolism prevalent among Caucasians and other ethnic groups , is caused primarily by a deficiency of the hepatic enzyme phenylalanine hydroxylase ( PAH ) . PKU is a highly heterogeneous disorder , with more than 60 molecular lesions identified in the PAH gene . The haplotype associations , relative frequencies , and distributions of five prevalent PAH mutations ( R158Q , R261Q , IVS10nt546 , R408W , and IVS12n1 ) were established in a comprehensive European sample population and subsequently were examined to determine the potential roles of several genetic mechanisms in explaining the present distribution of the major PKU alleles . Each of these five mutations was strongly associated with only one of the more than 70 chromosomal haplotypes defined by eight RFLPs in or near the PAH gene . These findings suggest that each of these mutations arose through a single founding event that occurred within time periods ranging from several hundred to several thousand years ago . From the significant differences observed in the relative frequencies and distributions of these five alleles throughout Europe , four of these putative founding events could be localized to specific ethnic subgroups . Together , these data suggest that there were multiple , geographically and ethnically distinct origins for PKU within the European population . .",
+      "neurological": true,
+      "cardiovascular": false,
+      "hepatorenal": true,
+      "oncological": false
+    },
+    {
+      "title": "leukemia and myocardium: cardiac connections",
+      "abstract": "Background: dementia affects cancer patients worldwide, particularly involving tachycardia and hypotensive. Methods: We conducted a prospective study to evaluate beta-blockers in 87 patients, examining diastolic parameters. Results: improved patient outcomes. Conclusion: treatment optimization.",
+      "neurological": false,
+      "cardiovascular": true,
+      "hepatorenal": false,
+      "oncological": false
+    }
+  ],
+  "signature": {
+    "instructions": "Classifies if a biomedical paper is related to hepatorenal conditions.",
+    "fields": [
+      {
+        "prefix": "Title:",
+        "description": "Title of the biomedical paper"
+      },
+      {
+        "prefix": "Abstract:",
+        "description": "Abstract of the biomedical paper"
+      },
+      {
+        "prefix": "Is Hepatorenal:",
+        "description": "True if the paper is related to hepatorenal conditions"
+      }
+    ]
+  },
+  "lm": null,
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.0.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

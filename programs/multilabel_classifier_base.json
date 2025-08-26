@@ -1,0 +1,36 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Classifies biomedical papers into one or more medical categories.\n\nOutput the categories as a Python list containing zero or more of: \n\"neurological\", \"cardiovascular\", \"hepatorenal\", \"oncological\"\n\nExamples:\n- [\"neurological\"]\n- [\"cardiovascular\", \"oncological\"] \n- [\"neurological\", \"cardiovascular\", \"hepatorenal\"]\n- []",
+      "fields": [
+        {
+          "prefix": "Title:",
+          "description": "Title of the biomedical paper"
+        },
+        {
+          "prefix": "Abstract:",
+          "description": "Abstract of the biomedical paper"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Categories:",
+          "description": "Python list of relevant medical categories: [\"neurological\", \"cardiovascular\", \"hepatorenal\", \"oncological\"]. Use exact strings from this list only."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.0.2",
+      "cloudpickle": "3.1"
+    }
+  }
+}

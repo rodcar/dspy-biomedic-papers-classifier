@@ -1,0 +1,59 @@
+{
+  "traces": [],
+  "train": [],
+  "demos": [
+    {
+      "augmented": true,
+      "title": "When myeloproliferative neoplasm meets leukemia: a neurological perspective",
+      "abstract": "Study design: observational investigation of statins in dementia. Participants: 404 cancer patients with myeloproliferative neoplasm and brain evaluation. Results: reduction in adverse events with targeted therapy correlation. Conclusion: need for further investigation.",
+      "is_cardiovascular": false
+    },
+    {
+      "augmented": true,
+      "title": "Transvenous right ventricular pacing during cardiopulmonary resuscitation of pediatric patients with acute cardiomyopathy.",
+      "abstract": "We describe the cardiopulmonary resuscitation efforts on five patients who presented in acute circulatory failure from myocardial dysfunction. Three patients had acute viral myocarditis, one had a carbamazepine-induced acute eosinophilic myocarditis, and one had cardiac hemosiderosis resulting in acute cardiogenic shock. All patients were continuously monitored with central venous and arterial catheters in addition to routine noninvasive monitoring. An introducer sheath, a pacemaker, and sterile pacing wires were made readily available for the patients, should the need arise to terminate resistant cardiac dysrhythmias. All patients developed cardiocirculatory arrest associated with extreme hypotension and dysrhythmias within the first 48 hours of their admission to the pediatric intensive care unit (PICU). Right ventricular pacemaker wires were inserted in all of them during cardiopulmonary resuscitation (CPR). In four patients, cardiac pacing was used, resulting in a temporary captured rhythm and restoration of their cardiac output. These patients had a second event of cardiac arrest, resulting in death, within 10 to 60 minutes. In one patient, cardiac pacing was not used, because he converted to normal sinus rhythm by electrical defibrillation within three minutes of initiating CPR. We conclude that cardiac pacing during resuscitative efforts in pediatric patients suffering from acute myocardial dysfunction may not have long-term value in and of itself; however, if temporary hemodynamic stability is achieved by this procedure, it may provide additional time needed to institute other therapeutic modalities.",
+      "is_cardiovascular": true
+    },
+    {
+      "title": "Incidence of solid tumours among pesticide applicators exposed to the organophosphate insecticide diazinon in the Agricultural Health Study: an updated analysis.",
+      "abstract": "OBJECTIVE: Diazinon, a common organophosphate insecticide with genotoxic properties, was previously associated with lung cancer in the Agricultural Health Study (AHS) cohort, but few other epidemiological studies have examined diazinon-associated cancer risk. We used updated diazinon exposure and cancer incidence information to evaluate solid tumour risk in the AHS. METHODS: Male pesticide applicators in Iowa and North Carolina reported lifetime diazinon use at enrolment (1993-1997) and follow-up (1998-2005); cancer incidence was assessed through 2010(North Carolina)\/2011(Iowa). Among applicators with usage information sufficient to evaluate exposure-response patterns, we used Poisson regression to estimate adjusted rate ratios (RRs) and 95% CI for cancer sites with >10 exposed cases for both lifetime (LT) exposure days and intensity-weighted (IW) lifetime exposure days (accounting for factors impacting exposure). RESULTS: We observed elevated lung cancer risks (N=283) among applicators with the greatest number of LT (RR=1.60; 95% CI 1.11 to 2.31; Ptrend=0.02) and IW days of diazinon use (RR=1.41; 95% CI 0.98 to 2.04; Ptrend=0.08). Kidney cancer (N=94) risks were non-significantly elevated (RRLT days=1.77; 95% CI 0.90 to 3.51; Ptrend=0.09; RRIW days 1.37; 95% CI 0.64 to 2.92; Ptrend=0.50), as were risks for aggressive prostate cancer (N=656). CONCLUSIONS: Our updated evaluation of diazinon provides additional evidence of an association with lung cancer risk. Newly identified links to kidney cancer and associations with aggressive prostate cancer require further evaluation.",
+      "neurological": false,
+      "cardiovascular": false,
+      "hepatorenal": true,
+      "oncological": true
+    },
+    {
+      "title": "stroke and aortic aneurysm: cardiac connections",
+      "abstract": "Study design: observational investigation of metformin in stroke. Participants: 221 elderly patients with pulmonary embolism and arrhythmia evaluation. Results: superior clinical efficacy with coronary artery disease correlation. Conclusion: safety considerations.",
+      "neurological": false,
+      "cardiovascular": true,
+      "hepatorenal": false,
+      "oncological": false
+    }
+  ],
+  "signature": {
+    "instructions": "You are assisting a team of medical researchers who are conducting a rapid evidence synthesis for a new cardiovascular treatment guideline. Accurate identification of relevant literature is critical, as missing key cardiovascular studies could have serious implications for patient care. Given the title and abstract of a biomedical publication, determine with high confidence whether the paper is about cardiovascular topics (such as heart disease, blood vessels, hypertension, cardiac treatments, etc.). Respond with \"Is Cardiovascular: True\" if the publication is focused on cardiovascular medicine, or \"Is Cardiovascular: False\" if it is not. Err on the side of caution—only label as \"True\" if the evidence is clear, as false positives could compromise the integrity of the guideline.",
+    "fields": [
+      {
+        "prefix": "Title:",
+        "description": "Title of the biomedical paper"
+      },
+      {
+        "prefix": "Abstract:",
+        "description": "Abstract of the biomedical paper"
+      },
+      {
+        "prefix": "Is Cardiovascular:",
+        "description": "True if the paper is related to cardiovascular conditions"
+      }
+    ]
+  },
+  "lm": null,
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "3.0.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}

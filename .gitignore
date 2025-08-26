@@ -1,0 +1,29 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Config
+.env
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Failed attempts
+notebook/challenge_gepa.ipynb
+notebook/challeng_react_tool.ipynb
+notebook/notebook.ipynb
+
+# Results
+confusion_matrices.png
+data/input_with_predictions.csv
+
+# Docs
+REPORT.md
