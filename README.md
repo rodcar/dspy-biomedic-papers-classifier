@@ -19,7 +19,7 @@ Sistema de clasificación automática que categoriza papers biomédicos en 4 sis
 ### Configuración
 ```bash
 # Clonar repositorio
-git clone 
+git clone https://github.com/rodcar/dspy-biomedic-papers-classifier.git
 cd dspy-biomedic-papers-classifier
 
 # Instalar uv (si no lo tienes)
