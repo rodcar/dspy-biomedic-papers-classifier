@@ -1,4 +1,4 @@
-# Clasificador Biomédico DSPy 🧬
+# Clasificador Biomédico DSPy 
 
 Clasificador multi-etiqueta de artículos biomédicos usando DSPy y modelos de lenguaje optimizados.
 
@@ -37,6 +37,7 @@ echo "OPENAI_API_KEY=tu_clave_api" > .env
 
 ### Ejecución
 ```bash
+source .venv/bin/activate
 # Evaluar modelo con archivo CSV
 # Reemplaza directament `data/input.csv` o use otra ruta.
 # Este archivo tiene pocos ejemplos para comprobar la funcionalidad.
