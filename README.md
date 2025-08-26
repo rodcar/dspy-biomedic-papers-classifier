@@ -38,12 +38,16 @@ echo "OPENAI_API_KEY=tu_clave_api" > .env
 ### Ejecución
 ```bash
 # Evaluar modelo con archivo CSV
+# Reemplaza directament `data/input.csv` o use otra ruta.
+# Este archivo tiene pocos ejemplos para comprobar la funcionalidad.
 uv run python main.py data/input.csv
 
 # El CSV debe tener columnas: title;abstract;group
 ```
 
 ## 📊 Resultados
+
+Ver `notebook/notebook_gepa.ipynb`.
 
 **Métricas obtenidas en dataset de prueba (1,213 ejemplos):**
 - **F1 Score Promedio**: 0.745
